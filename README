@@ -1,0 +1,6 @@
+# E-commerce Product Management System
+
+>Practicing TypeScript
+
+## Summary 
+    I used Typscript's syntax to help me catch mistakes before the program runs. The product class combines itd data with its method. I had issues with wrong import paths, I kept getting errors everywhere with that. I used async function and await so products are for display.
