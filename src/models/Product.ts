@@ -43,7 +43,7 @@ export class product {
         console.log(`In Stock: ${this.stock}`);
     }
 
-
+//total price with discount method
     getPriceWithDiscount(): number {
         const discountAmount = this.price * (this.discountPercentage / 100);
         return this.price - discountAmount;
