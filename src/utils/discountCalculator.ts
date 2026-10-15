@@ -1,4 +1,4 @@
-import { Product } from ".../src/models/Product";
+import { Product } from "/src/models/Product";
 
 //making a discount to be used, dollar amount taken off
 

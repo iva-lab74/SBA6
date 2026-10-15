@@ -1,3 +1,4 @@
+
 export class product {
     id: number;
     title: string;
@@ -44,7 +45,8 @@ export class product {
 
 
     getPriceWithDiscount(): number {
-        const discount = this.price * (1 - this.discountPercentage / 100);
-        return discount
+        const discountAmount = this.price * (this.discountPercentage / 100);
+        return this.price - discountAmount;
     }
+}
 
