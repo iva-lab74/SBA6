@@ -1,4 +1,4 @@
-import { Product } from ".../src/models/Product";
+import { Product } from "/src/Product";
 
 const taxRate = 4.75;
 const groceriesTaxRate = 3;
