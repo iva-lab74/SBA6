@@ -1,8 +1,8 @@
-import { product } from "./models/Product";
-import { fetchProducts, fetchProductNyId } from "./services/apiService";
+import { product } from "./models/product";
+import { fetchProducts } from "./models/apiService";
 import { calculateDiscount } from "./utils/discountCalculator";
-import { calculateTax } from "./utils/taxcalculator";
-import { apiError, errorhandler } from "./utils/errorhandler";
+import { calculateTax } from "./utils/taxCalculator";
+import { apiError, errorhandler } from "./utils/errorHandler";
 
 //getting the first three
 async function main() {

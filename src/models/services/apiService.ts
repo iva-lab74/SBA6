@@ -1,23 +1,23 @@
-import { Product } from "../models/Product";
+import { product } from "../models/product";
 
 const apiurl = "https://dummyjson.com/products";
 
 //getting the data, turning into objects
-export async function fetchProductData(): Promise<Product[]> {
+export async function fetchProductData(): Promise<product[]> {
     try {
         const response = await fetch(apiurl);
         const data = await response.json();
 
-        const products: Product[] = [];
+        const products: product[] = [];
         for ( const item of data. products) {
-            const product = new Product (
+            const Product = new product (
                 item.id,
                 item.title,
                 item.price,
                 item.discountPercentage,
                 item.category
             );
-            products.push(product);
+            products.push(Product);
         }
         
         //error handling 
