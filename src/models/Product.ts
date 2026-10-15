@@ -32,7 +32,19 @@ export class product {
      this.category = category;
     }
 
-    displayDetails()
+//displaying product details for the user
+    displayDetails(): void {
+        console.log(`${this.title} (${this.brand})`);
+        console.log(`Category: ${this.category}`);
+        console.log(`Original price: $${this.price}`);
+        console.log(`Discounted price: $${this.getPriceWithDiscount()}`);
+        console.log(`Rating: ${this.rating}/5`);
+        console.log(`In Stock: ${this.stock}`);
+    }
 
-    getPriceWithDiscount()
+
+    getPriceWithDiscount(): number {
+        const discount = this.price * (1 - this.discountPercentage / 100);
+        return discount
+    }
 
